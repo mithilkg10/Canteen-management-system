@@ -1,0 +1,56 @@
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.glow-on-hover {
+  background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.6) !important;
+  transform: translateY(-2px);
+}
+
+.meal-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.font-bold {
+  font-weight: 600;
+  color: white;
+}
+
+.text-sm {
+  font-size: 0.75rem;
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.hover-lift {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateX(4px);
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.revenue-badge {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: monospace;
+  font-size: 0.9rem;
+}

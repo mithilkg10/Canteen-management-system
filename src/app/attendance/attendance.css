@@ -1,0 +1,76 @@
+.attendance-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.attendance-action-card {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.action-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.action-info p {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+}
+
+.action-buttons-large {
+  display: flex;
+  gap: 1rem;
+}
+
+.check-in-btn, .check-out-btn {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.check-in-btn {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border: none;
+  color: white;
+}
+
+.check-in-btn:hover:not(:disabled) {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+}
+
+.check-out-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  color: white;
+}
+
+.check-out-btn:hover:not(:disabled) {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+}
+
+.check-in-btn:disabled, .check-out-btn:disabled {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .attendance-action-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .action-buttons-large {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .check-in-btn, .check-out-btn {
+    width: 100%;
+  }
+}
